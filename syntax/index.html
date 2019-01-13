@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+
+    
+
+    
+
+    <title>语法 | MAML</title>
+    <meta name="author" content="zane">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="壁纸元素Wallpaper元素引用系统设置的壁纸，除了不能指定图片源外其他和Image元素相同，可以有动画和其他属性控制。如果没有此元素则不显示壁纸。可以有多个。例子：&amp;lt;Wallpaper/&amp;gt;变量变量用Var开头  &amp;lt;Var name=&#34;&#34; expression=&#34;&#34; type=&#34;&#34; const=&#34;&#34; threshold=&#34;&#34; persist=&#34;&#34;/&amp;gt;代码值解释name自定义名称变量名expression表达式变量对应的...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    
+    <link rel="alternate" href="/atom.xml" title="MAML" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/images/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<body>
+
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">MAML</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item" href="/guide/">
+                <span class="nav-text">入门</span>
+            </a>
+        
+            <a class="nav-item active" href="/syntax/">
+                <span class="nav-text">语法</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/tutorials">
+                <span class="nav-text">实例</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="https://www.baidu.com/baidu" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="wd" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#壁纸元素"><span class="toc-number">1.</span> <span class="toc-text">壁纸元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量"><span class="toc-number">2.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#全局变量"><span class="toc-number">3.</span> <span class="toc-text">全局变量</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope="" itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            语法
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://dzzzw.github.io/dzane/syntax/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-01-13T05:41:22.000Z" itemprop="datePublished">2019-01-13</time>
+</a>
+
+            
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <h2 id="壁纸元素"><a href="#壁纸元素" class="headerlink" title="壁纸元素"></a>壁纸元素</h2><a id="more"></a>
+<p>Wallpaper元素引用系统设置的壁纸，除了不能指定图片源外其他和Image元素相同，可以有动画和其他属性控制。如果没有此元素则不显示壁纸。可以有多个。例子：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Wallpaper</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><br><br><br></p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>变量用Var开头  </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Var</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">expression</span>=<span class="string">""</span> <span class="attr">type</span>=<span class="string">""</span> <span class="attr">const</span>=<span class="string">""</span> <span class="attr">threshold</span>=<span class="string">""</span> <span class="attr">persist</span>=<span class="string">""</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>自定义名称</td>
+<td>变量名</td>
+</tr>
+<tr>
+<td>expression</td>
+<td>表达式</td>
+<td>变量对应的表达式或常量 注意：如果定义字符串常量需要多一套单引号: expression=”‘my string’”</td>
+</tr>
+<tr>
+<td>type</td>
+<td>number/string</td>
+<td>定义数值变量或字符串变量 默认：number</td>
+</tr>
+<tr>
+<td>const</td>
+<td>true/false</td>
+<td>为true时变量会在初始化后不会重新计算，可以提高效率。如果变量值会在锁屏运行期间改变，const设为false 默认：false</td>
+</tr>
+<tr>
+<td>persist</td>
+<td>true/false</td>
+<td>默认false，变量持久化。指定为true后，如果没有重新给定该变量其他的值，那么这个值会一直保存，无论解锁后重新锁定或者重新应用主题都不会还原</td>
+</tr>
+<tr>
+<td>threshold</td>
+<td>阈值</td>
+<td>阈值触发，当变量值的变化超过设定的阈值时，可以触发一些命令。例如：</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Var</span> <span class="attr">name</span>=<span class="string">"time3"</span> <span class="attr">expression</span>=<span class="string">"#minute%10"</span> <span class="attr">threshold</span>=<span class="string">"1"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">Trigger</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">Command</span> <span class="attr">target</span>=<span class="string">"time3_anim.visibility"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">Command</span> <span class="attr">target</span>=<span class="string">"time3_anim.animation"</span> <span class="attr">value</span>=<span class="string">"play"</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">Command</span> <span class="attr">target</span>=<span class="string">"time3_anim_new.visibility"</span> <span class="attr">value</span>=<span class="string">"false"</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">Command</span> <span class="attr">target</span>=<span class="string">"time_3_anim_new.visiblity"</span> <span class="attr">value</span>=<span class="string">"true"</span> <span class="attr">delay</span>=<span class="string">"400"</span>/&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">Command</span> <span class="attr">target</span>=<span class="string">"time_3_anim_new.animation"</span> <span class="attr">value</span>=<span class="string">"play"</span> <span class="attr">delay</span>=<span class="string">"400"</span>/&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Var</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>上述代码表示#time3的值每变化1，就会执行<trigger>里面的所有命令</trigger></p>
+<p><br><br><br></p>
+<h2 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h2><p><strong>解锁</strong> </p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unlocker.move_x</td>
+<td>解锁部件在x方向的偏移</td>
+</tr>
+<tr>
+<td>unlocker.move_y</td>
+<td>解锁部件在y方向的偏移</td>
+</tr>
+<tr>
+<td>unlocker.move_dist</td>
+<td>解锁部件移动的距离</td>
+</tr>
+<tr>
+<td>unlocker.state</td>
+<td>解锁部件的状态： 0 normal, 1 pressed, 2 reached</td>
+</tr>
+</tbody>
+</table>
+<p><strong>触摸</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>touch_x</td>
+<td>当前触摸点的x坐标</td>
+</tr>
+<tr>
+<td>touch_y</td>
+<td>当前触摸点的y坐标</td>
+</tr>
+<tr>
+<td>touch_begin_x</td>
+<td>按下屏幕时的初始x坐标</td>
+</tr>
+<tr>
+<td>touch_begin_y</td>
+<td>按下屏幕时的初始y坐标</td>
+</tr>
+<tr>
+<td>touch_begin_time</td>
+<td>按下屏幕时的时间</td>
+</tr>
+</tbody>
+</table>
+<p><strong>时间</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>time</td>
+<td>当前时间，long</td>
+</tr>
+<tr>
+<td>time_sys</td>
+<td>系统时间毫秒数</td>
+</tr>
+<tr>
+<td>year</td>
+<td>年份</td>
+</tr>
+<tr>
+<td>month</td>
+<td>月份（取值范围是0~11，0表示一月，1表示二月，以此类推）</td>
+</tr>
+<tr>
+<td>date</td>
+<td>日期</td>
+</tr>
+<tr>
+<td>day_of_week</td>
+<td>星期（1表示星期日，2表示星期一，等等）</td>
+</tr>
+<tr>
+<td>hour24</td>
+<td>24小时制</td>
+</tr>
+<tr>
+<td>minute</td>
+<td>分钟</td>
+</tr>
+<tr>
+<td>second</td>
+<td>秒</td>
+</tr>
+<tr>
+<td>ampm</td>
+<td>上下午 0:am 1:pm</td>
+</tr>
+<tr>
+<td>time_format</td>
+<td>0：12小时制 1：24小时制</td>
+</tr>
+</tbody>
+</table>
+<p><strong>农历</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">year_lunar          农历年份</span><br><span class="line">year_lunar1864	    用来计算天干地支</span><br><span class="line">month_lunar         农历月份 从0开始计</span><br><span class="line">month_lunar_leap	0/1 是否润月</span><br><span class="line">date_lunar          农历日期 从1开始计</span><br></pre></td></tr></table></figure>
+<p><strong>充电与电量</strong>   </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">battery_level	当前电量，1~100</span><br><span class="line">battery_state	0正常 1充电 2电量低 3已充满</span><br></pre></td></tr></table></figure>
+<p><strong>screen:</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">screen_width        屏幕宽度</span><br><span class="line">screen_height       屏幕高度</span><br><span class="line">view_width          部件宽度(各插件中才使用,比如时钟)</span><br><span class="line">view_height         部件高度(各插件中才使用,比如时钟)</span><br><span class="line">raw_screen_width	物理宽度（这个表示当前设备的屏幕分辨率，不受根节点screenWidth的影响）</span><br><span class="line">raw_screen_height	物理高度</span><br></pre></td></tr></table></figure>
+<p>image:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">image.actual_w	图片显示宽度</span><br><span class="line">image.actual_h	</span><br><span class="line">image.bmp_width	图片文件的宽度（不受裁切、缩放的影响，只根据src找到指定的图片，并检测该文件的宽度）</span><br><span class="line">image.bmp_height</span><br></pre></td></tr></table></figure>
+        
+    </section>
+</article>
+
+
+
+</div>
+        <footer class="footer">
+    copyright 2018 zane 
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+            
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+
+</body>
+</html>

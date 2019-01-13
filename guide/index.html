@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+
+    
+
+    
+
+    <title>入门教程 | MAML</title>
+    <meta name="author" content="zane">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="百变锁屏百变锁屏在主题包里的lockscreen/advance目录下，manifest.xml文件是描述脚本&amp;lt;Lockscreen frameRate=&#34;&#34; displayDesktop=&#34;&#34;  showSysWallpaper=&#34;&#34; screenWidth=&#34;1080&#34;&amp;gt;   &amp;lt;Image /&amp;gt;   &amp;lt;Image /&amp;gt;   &amp;lt;Unlocker/&amp;gt;   &amp;lt;Unlocker/&amp;gt;   &amp;lt;Time/&amp;gt;   &amp;lt;Da...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    
+    <link rel="alternate" href="/atom.xml" title="MAML" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/images/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<body>
+
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">MAML</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item active" href="/guide/">
+                <span class="nav-text">入门</span>
+            </a>
+        
+            <a class="nav-item" href="/syntax/">
+                <span class="nav-text">语法</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/tutorials">
+                <span class="nav-text">实例</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="https://www.baidu.com/baidu" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="wd" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#百变锁屏"><span class="toc-number">1.</span> <span class="toc-text">百变锁屏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#百变壁纸"><span class="toc-number">2.</span> <span class="toc-text">百变壁纸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动态图标"><span class="toc-number">3.</span> <span class="toc-text">动态图标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机型适配"><span class="toc-number">4.</span> <span class="toc-text">机型适配</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope="" itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            入门教程
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://dzzzw.github.io/dzane/guide/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2018-11-26T17:10:36.000Z" itemprop="datePublished">2018-11-27</time>
+</a>
+
+            
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <h2 id="百变锁屏"><a href="#百变锁屏" class="headerlink" title="百变锁屏"></a>百变锁屏</h2><a id="more"></a>
+<p>百变锁屏在主题包里的lockscreen/advance目录下，manifest.xml文件是描述脚本</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Lockscreen</span> <span class="attr">frameRate</span>=<span class="string">""</span> <span class="attr">displayDesktop</span>=<span class="string">""</span>  <span class="attr">showSysWallpaper</span>=<span class="string">""</span> <span class="attr">screenWidth</span>=<span class="string">"1080"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Image</span> /&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Image</span> /&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Unlocker</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Unlocker</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Time</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">DateTime</span>/&gt;</span></span><br><span class="line">    …</span><br><span class="line">   <span class="tag">&lt;<span class="name">Text</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Lockscreen</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>其中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">frameRate           指定帧率，如果动画缓慢，可以指定小一点的值，省电。默认为30。  </span><br><span class="line">displayDesktop      默认为false，透视到桌面功能，如果没有锁屏壁纸或者锁屏壁纸可以被移开或透明时可以看到桌面launcher或者是锁屏前的应用程序。可以完美实现WP7，Meego，阿里云等的解锁界面。   </span><br><span class="line">showSysWallpaper    默认为false,是否在锁屏界面显示桌面壁纸。开启后如果没有指定锁屏壁纸&lt;Wallpaper/&gt;,会将桌面壁纸作为锁屏的壁纸。  </span><br><span class="line">screenWidth         设定屏幕宽度标准。如果指定为1080,锁屏中所有元素的位置都按1080p的布局编写，720p、480p等分辨率的手机会自动进行缩放。</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="百变壁纸"><a href="#百变壁纸" class="headerlink" title="百变壁纸"></a>百变壁纸</h2><p>百变壁纸在主题包的miwallpaper目录下，描述文件也是manifest.xml。根节点表示与百变锁屏基本一致：  </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MiWallpaper</span> <span class="attr">frameRate</span>=<span class="string">"1"</span> <span class="attr">width</span>=<span class="string">"1080"</span> <span class="attr">height</span>=<span class="string">"1920"</span> <span class="attr">screenWidth</span>=<span class="string">"1080"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">Var</span>/&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">Image</span>/&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">Group</span>/&gt;</span></span><br><span class="line">      …</span><br><span class="line"><span class="tag">&lt;/<span class="name">MiWallpaper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">width	表示百变壁纸的宽度。</span><br><span class="line">height	表示高度</span><br><span class="line">wallpaper_offset_pixel_x	偏移的像素数 （0 ～ -1*屏宽）</span><br><span class="line">wallpaper_offset_x	偏移百分比 （0 ~ 1.0）</span><br></pre></td></tr></table></figure>
+<p>要实现元素跟随手指滑动的效果，需要借助#wallpaper_offset_pixel_x，#wallpaper_offset_x 二者关系：#wallpaper_offset_x <em> 屏宽 = -1</em>#wallpaper_offset_pixel_x<br>滑动时： 在第一屏，wallpaper_offset_pixel_x = 0, wallpaper_offset_x = 0; 滑到最后一屏，wallpaper_offset_pixel_x = -1*屏宽，wallpaper_offset_x = 1.0  </p>
+<blockquote>
+<p>为了适配不同分辨率机型，建议使用#wallpaper_offset_x。建议的设计方式：<br>壁纸切成双屏宽 （屏宽指的是screenWidth）<br>壁纸定位：x=”-#wallpaper_offset_x <em> 屏宽”<br>需要跟随滑动的元素定位：x=”-#wallpaper_offset_x </em> 屏宽 + 相对壁纸的位置”    </p>
+</blockquote>
+<p><br></p>
+<h2 id="动态图标"><a href="#动态图标" class="headerlink" title="动态图标"></a>动态图标</h2><p>动态图标在主题包icons\fancy_icons\目录下，每个动态图标是一个文件夹，文件夹的名字是对应的app包名。例如日历的动态图标是一个叫”com.android.calendar”的文件夹，里面包含manifest.xml描述文件  </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Icon</span> <span class="attr">version</span>=<span class="string">"1"</span> <span class="attr">frameRate</span>=<span class="string">""</span> <span class="attr">width</span>=<span class="string">"136"</span> <span class="attr">height</span>=<span class="string">"136"</span> <span class="attr">screenWidth</span>=<span class="string">"720"</span> <span class="attr">useVariableUpdater</span>=<span class="string">""</span> <span class="attr">hideApplicationMessage</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Var</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Image</span>/&gt;</span>	   </span><br><span class="line">    <span class="tag">&lt;<span class="name">Text</span>/&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">DateTime</span>/&gt;</span></span><br><span class="line">     …  </span><br><span class="line"><span class="tag">&lt;/<span class="name">Icon</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>hideApplicationMessage</strong>: 默认false,屏蔽右上角的通知标志。  </p>
+</li>
+<li><p><strong>useVariableUpdater</strong>： 指定需要哪些系统变量，目前包括电量和时间，而且可以指定时间的更新周期，如果时间小工具每秒更新一次，需要指定更新周期为1秒，否则默认会每分钟更新一次。如果小工具或动态图标只显示日期，则每天更新一次，可以指定更新周期为1天。尽量选择较长的更新周期，以节约系统资源。<br>目前支持的tag： Battery, DateTime.Day, DateTime.Hour,DateTime.Minute,DateTime.Second  </p>
+<blockquote>
+<p>如果某个小工具不需要电量或时间变量，则需要使用useVariableUpdater=”none”，指定不做时间变量等更新。<br>如果某个小工具显示系统电量并且显示根据时间每小时更换背景图片: useVariableUpdater=”Battery,DateTime.Hour”<br>如果需要每秒进行多次刷新，可以直接使用frameRate  </p>
+</blockquote>
+</li>
+</ul>
+<p><br></p>
+<h2 id="机型适配"><a href="#机型适配" class="headerlink" title="机型适配"></a>机型适配</h2><p>一份manifest文件，可以同时运行在多个设备，只需要设置好在不同尺寸或密度的设备上使用的资源和缩放比例就可以了。<br>1.资源适配：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">extraResources=&quot;sw1000-den320:den320:1.2,sw1000-den320::1.2,sw1000-den320-large:den320:1.2&quot;</span><br></pre></td></tr></table></figure>
+<p> <strong>sw1000-den320:den320:1.2</strong>&#160;&#160;&#160;&#160;&#160;在屏宽是1000密度是320的机型上，使用的是den320文件夹下的资源，并且放大1.2倍；<br> <strong>sw1000-den320::1.2</strong>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在屏宽1000密度320的机型上，使用的是默认的资源，并且放大1.2倍)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">extraResources=&quot;sw2000-den480:1.8,sw1000-den320-large:1.8&quot;</span><br></pre></td></tr></table></figure>
+<p>这两句话中间都是只有一个冒号，意思是sw2000-den480的机型使用的资源就是在sw2000-den480这一同名文件夹下的资源，并且放大1.8倍)</p>
+<p><br></p>
+<p>2.布局适配：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">extraScales=&quot;sw1000-den320:1.2,sw2000-den480-large:1.8&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>适配原理</strong>：  </p>
+<ol>
+<li>首先把你所有自定义中出现的den和sw做一个列表 （比如这里extraResources=”sw1440-den440::0.916, sw720-den320::0.667, sw480-den240::0.444”，涉及到的den有440, 320, 240, 再加上一个默认的480; sw有1440, 720, 480, 再加一个默认的1080(与den480对应) )  </li>
+<li>然后当你的主题放到一个设备上时，首先拿你的设备密度去上面的den列表中找，找到最贴近的一个，然后如果同样den有多个sw，那么再拿设备的屏宽去这几个sw中找最贴近的一个，这样就找到了最合适的swXXX-denXXX  </li>
+<li>最后，资源就取这个sw-den对应的目录下的资源，及缩放比例Sr。代码中数字的缩放比例就使用sw-den对应的Ss.</li>
+<li>最最后，就是缩放比例 </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果按密度缩放（即scaleByDensity=&quot;true&quot;）：   资源真正的缩放比例是Sr * 设备den / 找到的den，代码中的数字缩放比例是Ss * 设备den / 找到的den</span><br><span class="line"></span><br><span class="line">如果按屏宽缩放（即scaleByDensity=&quot;false&quot;）：  资源真正的缩放比例是Sr * 设备sw / 找到的sw  ，代码中的数字缩放比例是Ss * 设备sw / 找到的sw</span><br></pre></td></tr></table></figure>
+
+        
+    </section>
+</article>
+
+
+
+</div>
+        <footer class="footer">
+    copyright 2018 zane 
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+            
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+
+</body>
+</html>

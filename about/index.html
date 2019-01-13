@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+
+    
+
+    
+
+    <title>概述 | MAML</title>
+    <meta name="author" content="zane">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="MAML引擎脚本语言   MIUI Application Markup Language for MORE （MIUI MORE引擎应用标记语言）MORE渲染引擎   Markup Oriented Rendering Engine （基于标记语言的渲染引擎）概述最初用于百变锁屏，使用xml用特定的语法描述锁屏界面。后来不断增强功能，逐步演化成一套接近通用的界面描述语言和图形渲染引擎，在一定需求下可用于开发风格多变的用户界面。可方便地通过更换皮肤改变界面风格、动画甚至交互方式。M...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    
+    <link rel="alternate" href="/atom.xml" title="MAML" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/images/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<body>
+
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">MAML</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item active" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item" href="/guide/">
+                <span class="nav-text">入门</span>
+            </a>
+        
+            <a class="nav-item" href="/syntax/">
+                <span class="nav-text">语法</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/tutorials">
+                <span class="nav-text">实例</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="https://www.baidu.com/baidu" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="wd" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MAML引擎脚本语言"><span class="toc-number">1.</span> <span class="toc-text">MAML引擎脚本语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MORE渲染引擎"><span class="toc-number">2.</span> <span class="toc-text">MORE渲染引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#概述"><span class="toc-number">3.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MORE引擎适用哪些类型的界面开发"><span class="toc-number">4.</span> <span class="toc-text">MORE引擎适用哪些类型的界面开发</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope="" itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            概述
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://dzzzw.github.io/dzane/about/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2018-11-26T17:10:36.000Z" itemprop="datePublished">2018-11-27</time>
+</a>
+
+            
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <h3 id="MAML引擎脚本语言"><a href="#MAML引擎脚本语言" class="headerlink" title="MAML引擎脚本语言"></a>MAML引擎脚本语言</h3><a id="more"></a>
+<p>   MIUI Application Markup Language for MORE （MIUI MORE引擎应用标记语言）<br><br></p>
+<h3 id="MORE渲染引擎"><a href="#MORE渲染引擎" class="headerlink" title="MORE渲染引擎"></a>MORE渲染引擎</h3><p>   Markup Oriented Rendering Engine （基于标记语言的渲染引擎）</p>
+<p><br></p>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>最初用于百变锁屏，使用xml用特定的语法描述锁屏界面。后来不断增强功能，逐步演化成一套接近通用的界面描述语言和图形渲染引擎，在一定需求下可用于开发风格多变的用户界面。可方便地通过更换皮肤改变界面风格、动画甚至交互方式。<br>MAML语言和Android的界面描述xml 类似. 所不同的是Android描述的是静态界面，对界面元素的更改依赖java代码。MAML描述的是静态界面+动态属性，UI在时间线上按一定的帧率不断刷新，UI显示根据元素属性的变量表达式的计算结果实时更新。MAML语言和运行时引擎已经从锁屏中独立出来作为MIUI内置的通用框架，除了显示时间日期等，还支持查询标准Content Provider来获取各种信息如天气。显示图片文本等各种元素，各种动画，滑动点击等界面交互控件，适于实现展示信息或有简单交互操作的界面。比如时钟、天气小部件、闹钟响铃界面。<br>框架支持动态帧率，不必按照固定帧率不停渲染，在没有动画和更新的时侯停止渲染，此时仅占用极少资源，对于缓慢变化的动画使用低帧率渲染，高动态的动画开始后立即调整到高帧率全速渲染。全速渲染时全屏帧率基本可以达到60帧。合理使用可以既炫酷又不费电。<br><br></p>
+<h3 id="MORE引擎适用哪些类型的界面开发"><a href="#MORE引擎适用哪些类型的界面开发" class="headerlink" title="MORE引擎适用哪些类型的界面开发"></a>MORE引擎适用哪些类型的界面开发</h3><ol>
+<li>展示性的信息，如图片，文字 （不适合列表信息和大段文本，不适合用户输入）</li>
+<li>需要有丰富的界面动画及交互动画。</li>
+<li>较简单的交互，拖拽、点击 （但不限于拖拽点击，通过xml代码可以实现部分类似java编程中onTouchEvent所能做到的交互）</li>
+<li>使用标准控件无法实现的信息展示方式，或者无法实现的交互方式，需要自制控件的，大部分可以通过xml代码方便地描述实现。</li>
+<li>需要灵活更换皮肤风格，并且界面动画和交互动画甚至部分交互方式都可以通过皮肤更换。无需更改应用程序。</li>
+<li>比如一些简单的工具类应用程序、无输入的操作界面希望能更换操作模式（例如来电接听界面）和桌面小工具可以考虑使用，也可以作为一个动画框架实现类似电子贺卡的界面，可支持交互，做为应用程序中的彩蛋（比如短信中的生日彩蛋）</li>
+</ol>
+<ul>
+<li><strong>MIUI主题使用MORE的模块</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>主题包对应模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>百变锁屏</td>
+<td>LockScreen</td>
+</tr>
+<tr>
+<td>桌面时钟</td>
+<td>clock_2x4</td>
+</tr>
+<tr>
+<td>百变壁纸</td>
+<td>MiWallpaper</td>
+</tr>
+<tr>
+<td>动态图标</td>
+<td>icon</td>
+</tr>
+<tr>
+<td>自由桌面</td>
+<td>clock_2x4</td>
+</tr>
+</tbody>
+</table>
+
+        
+    </section>
+</article>
+
+
+
+</div>
+        <footer class="footer">
+    copyright 2018 zane 
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+            
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+
+</body>
+</html>
